@@ -109,16 +109,16 @@ OpenStreetMapでは、お店の色々な情報を登録することができま�
 
 <img src="img/input_delivery_value_done.png" style="max-width:320px;max-height:320px" alt="TODO"/>
 
-コミット
+保存
 ------
 うまく編集できましたか? この時点ではまだ、変更した内容はOpenStreetMapに反映されていません。
-**コミット**することによって、全世界に向けて情報を発信することができます。
+**保存**することによって、全世界に向けて情報を発信することができます。
 
-画面右上の「コミット」をクリックします。
+画面右上の「保存」をクリックします。
 
 <img src="img/commit.png" style="max-width:320px;max-height:320px" alt="TODO"/>
 
-コミットする際には、「何を変更したのか」を「コミットメッセージ」として添えます。
+保存する際には、「何を変更したのか」を「変更セットのコメント」として添えます。
 
 <img src="img/commit_message.png" style="max-width:320px;max-height:320px" alt="TODO"/>
 
