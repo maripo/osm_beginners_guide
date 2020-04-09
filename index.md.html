@@ -1,97 +1,444 @@
-<h1 id="お店の情報を登録しよう-openstreetmapはじめてガイド">お店の情報を登録しよう! OpenStreetMapはじめてガイド</h1>
-<p><strong>みんなでテイクアウトMAP</strong>は、みんなで編集できるみんなの地図<a href="https://www.openstreetmap.org/"><strong>OpenStreetMap</strong></a>のデータに基づいています。</p>
-<p>地元のお店やお気に入りのお店の情報が不足していたり間違っていたりしたら、だれでも変更することができます。お店自体が登録されていなくても、今すぐ登録することができます。一般的なWebブラウザで簡単にできますので、ぜひこの機会にOpenStreetMapを編集してみませんか?
-OpenStreetMapを編集するにはアカウントを持っている必要があります。アカウントは誰でも作成することができます。</p>
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>index</title>
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(197, 200, 198); background-color: rgb(29, 31, 33); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(155, 160, 157); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: white; }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(155, 160, 157); border-color: rgb(67, 72, 76); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(67, 72, 76); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(67, 72, 76); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(48, 51, 55); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(39, 41, 44); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(67, 72, 76) rgb(67, 72, 76) rgb(53, 57, 60); border-image: initial; background-color: rgb(48, 51, 55); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; overflow-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { overflow-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; overflow-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
+.markdown-preview code { text-shadow: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #c5c8c6;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+pre.editor-colors .gutter {
+  background-color: #292c2f;
+}
+pre.editor-colors .gutter .cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .line-number.cursor-line-no-selection {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #fba0e3;
+}
+pre.editor-colors .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor {
+  border-color: white;
+}
+pre.editor-colors .selection .region {
+  background-color: #444;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #f8de7e;
+  margin-top: -1px;
+  opacity: .7;
+}
+.syntax--comment {
+  color: #8a8a8a;
+}
+.syntax--entity {
+  color: #FFD2A7;
+}
+.syntax--entity.syntax--name.syntax--type {
+  text-decoration: underline;
+  color: #FFFFB6;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #9B5C2E;
+}
+.syntax--keyword {
+  color: #96CBFE;
+}
+.syntax--keyword.syntax--control {
+  color: #96CBFE;
+}
+.syntax--keyword.syntax--operator {
+  color: #EDEDED;
+}
+.syntax--storage {
+  color: #CFCB90;
+}
+.syntax--storage.syntax--modifier {
+  color: #96CBFE;
+}
+.syntax--constant {
+  color: #99CC99;
+}
+.syntax--constant.syntax--numeric {
+  color: #FF73FD;
+}
+.syntax--variable {
+  color: #C6C5FE;
+}
+.syntax--invalid.syntax--deprecated {
+  text-decoration: underline;
+  color: #FD5FF1;
+}
+.syntax--invalid.syntax--illegal {
+  color: #FD5FF1;
+  background-color: rgba(86, 45, 86, 0.75);
+}
+.syntax--string .syntax--source,
+.syntax--string .syntax--meta.syntax--embedded.syntax--line {
+  color: #EDEDED;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #00A0A0;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded .syntax--source {
+  color: #00A0A0;
+}
+.syntax--string {
+  color: #A8FF60;
+}
+.syntax--string .syntax--constant {
+  color: #00A0A0;
+}
+.syntax--string.syntax--regexp {
+  color: #E9C062;
+}
+.syntax--string.syntax--regexp .syntax--constant.syntax--character.syntax--escape,
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded,
+.syntax--string.syntax--regexp .syntax--string.syntax--regexp.syntax--arbitrary-repetition {
+  color: #FF8000;
+}
+.syntax--string.syntax--regexp.syntax--group {
+  color: #C6A24F;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.syntax--string.syntax--regexp.syntax--character-class {
+  color: #B18A3D;
+}
+.syntax--string .syntax--variable {
+  color: #8A9A95;
+}
+.syntax--support {
+  color: #FFFFB6;
+}
+.syntax--support.syntax--function {
+  color: #DAD085;
+}
+.syntax--support.syntax--constant {
+  color: #FFD2A7;
+}
+.syntax--support.syntax--type.syntax--property-name.syntax--css {
+  color: #EDEDED;
+}
+.syntax--source .syntax--entity.syntax--name.syntax--tag,
+.syntax--source .syntax--punctuation.syntax--tag {
+  color: #96CBFE;
+}
+.syntax--source .syntax--entity.syntax--other.syntax--attribute-name {
+  color: #FF73FD;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #FF73FD;
+}
+.syntax--entity.syntax--name.syntax--tag.syntax--namespace,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--namespace {
+  color: #E18964;
+}
+.syntax--meta.syntax--preprocessor.syntax--c {
+  color: #8996A8;
+}
+.syntax--meta.syntax--preprocessor.syntax--c .syntax--keyword {
+  color: #AFC4DB;
+}
+.syntax--meta.syntax--cast {
+  color: #676767;
+}
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype,
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype .syntax--entity,
+.syntax--meta.syntax--sgml.syntax--html .syntax--meta.syntax--doctype .syntax--string,
+.syntax--meta.syntax--xml-processing,
+.syntax--meta.syntax--xml-processing .syntax--entity,
+.syntax--meta.syntax--xml-processing .syntax--string {
+  color: #8a8a8a;
+}
+.syntax--meta.syntax--tag .syntax--entity,
+.syntax--meta.syntax--tag > .syntax--punctuation,
+.syntax--meta.syntax--tag.syntax--inline .syntax--entity {
+  color: #FF73FD;
+}
+.syntax--meta.syntax--tag .syntax--name,
+.syntax--meta.syntax--tag.syntax--inline .syntax--name,
+.syntax--meta.syntax--tag > .syntax--punctuation {
+  color: #96CBFE;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--name.syntax--tag {
+  text-decoration: underline;
+  color: #96CBFE;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--tag.syntax--pseudo-class {
+  color: #8F9D6A;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #8B98AB;
+}
+.syntax--meta.syntax--selector.syntax--css .syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
+  color: #62B1FE;
+}
+.syntax--meta.syntax--property-group .syntax--support.syntax--constant.syntax--property-value.syntax--css,
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.syntax--property-value.syntax--css {
+  color: #F9EE98;
+}
+.syntax--meta.syntax--preprocessor.syntax--at-rule .syntax--keyword.syntax--control.syntax--at-rule {
+  color: #8693A5;
+}
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.syntax--named-color.syntax--css,
+.syntax--meta.syntax--property-value .syntax--constant {
+  color: #87C38A;
+}
+.syntax--meta.syntax--constructor.syntax--argument.syntax--css {
+  color: #8F9D6A;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+.syntax--meta.syntax--separator {
+  color: #60A633;
+  background-color: #242424;
+}
+.syntax--meta.syntax--line.syntax--entry.syntax--logfile,
+.syntax--meta.syntax--line.syntax--exit.syntax--logfile {
+  background-color: rgba(238, 238, 238, 0.16);
+}
+.syntax--meta.syntax--line.syntax--error.syntax--logfile {
+  background-color: #751012;
+}
+.syntax--source.syntax--gfm {
+  color: #999;
+}
+.syntax--gfm .syntax--markup.syntax--heading {
+  color: #eee;
+}
+.syntax--gfm .syntax--link {
+  color: #555;
+}
+.syntax--gfm .syntax--variable.syntax--list,
+.syntax--gfm .syntax--support.syntax--quote {
+  color: #555;
+}
+.syntax--gfm .syntax--link .syntax--entity {
+  color: #ddd;
+}
+.syntax--gfm .syntax--raw {
+  color: #aaa;
+}
+.syntax--markdown .syntax--paragraph {
+  color: #999;
+}
+.syntax--markdown .syntax--heading {
+  color: #eee;
+}
+.syntax--markdown .syntax--raw {
+  color: #aaa;
+}
+.syntax--markdown .syntax--link {
+  color: #555;
+}
+.syntax--markdown .syntax--link .syntax--string {
+  color: #555;
+}
+.syntax--markdown .syntax--link .syntax--string.syntax--title {
+  color: #ddd;
+}
+</style>
+        </head>
+        <body class='markdown-preview' data-use-github-style><h1 id="openstreetmapを編集してみよう">OpenStreetMapを編集してみよう</h1>
+<p>「みんなでテイクアウトMAP」は、みんなで編集できるみんなの地図、<strong>OpenStreetMap</strong>のデータに基づいています。OpenStreetMapは、アカウントを作れば誰でも編集することができます。</p>
+<p>地元のお店やお気に入りのお店の情報が不足していたり間違っていたりしたら、いつでも変更することができます。お店自体が登録されていなくても、今すぐ登録することができます。
+一般的なWebブラウザで簡単にできますので、ぜひこの機会にOpenStreetMapを編集してみませんか?</p>
 <ul>
-<li><a href="#login">OpenStreetMapのアカウントを<strong>持っている</strong>方はこちらからスタート</a></li>
-<li><a href="#register">OpenStreetMapのアカウントを<strong>持っていない</strong>方はこちらからスタート</a></li>
+<li><p>OSM Top <a href="https://www.openstreetmap.org/">https://www.openstreetmap.org/</a></p>
+</li>
+<li><p>OpenStreetMapのアカウントを<strong>持っている</strong>方はこちら</p>
+</li>
+<li><p>OpenStreetMapのアカウントを<strong>持っていない</strong>方はこちら</p>
+</li>
 </ul>
-<h2 id="アカウントの作成a-nameregistera">アカウントの作成<a name="register"></a></h2>
-<p>OpenStreetMapのアカウントをお持ちでない方は、<a href="https://www.openstreetmap.org/user/">ユーザ登録ページ</a>で登録を行ってください。メールアドレスや表示名 (OpenStreetMap上で表示されるあなたの名前です) を入力すると、登録したメールアドレス宛にメールが届きますので、メールの内容に従って登録を完了させてください。</p>
-<img alt="ユーザ登録" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/register.png">
-
+<h2 id="アカウントの作成">アカウントの作成</h2>
+<p>アカウントを作成します。</p>
+<ul>
+<li>ユーザー登録 <a href="https://www.openstreetmap.org/user/">https://www.openstreetmap.org/user/</a></li>
+</ul>
+<p><img title="ユーザー登録" alt="ユーザー登録" src="/Users/maripo/git/id_guide/img/register.png"></p>
 <p>その他のSNSなど外部アカウントとの連携も可能ですので、 (TODO: 参考ページ)</p>
-<h2 id="ログインa-namelogina">ログイン<a name="login"></a></h2>
-<p>すでにOpenStreetMapのアカウントをお持ちの場合は、<a href="https://www.openstreetmap.org/login">ログインページ</a>からログインします。</p>
-<img alt="ログイン" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/login.png">
-
+<h2 id="ログイン">ログイン</h2>
+<p>ログインします。IDとパスワードを入力します。</p>
+<ul>
+<li>ログイン <a href="https://www.openstreetmap.org/login">https://www.openstreetmap.org/login</a></li>
+</ul>
+<p><img title="ログイン" alt="ログイン" src="/Users/maripo/git/id_guide/img/login.png"></p>
 <h2 id="編集する">編集する</h2>
-<p>お店のある地域にズームインします。</p>
-<p>地図を動かしながらズームインしていくこともできます。</p>
-<img alt="地図が表示されます" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/map_japan.png">
-
-<p>左上の検索ボックスに住所や駅名などを入れると検索できます。</p>
-<img alt="地名で検索" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/map_search.png">
-
+<h2 id="編集したい地域にズームイン">編集したい地域にズームイン</h2>
+<p><img title="地図が表示されます" alt="地図が表示されます" src="/Users/maripo/git/id_guide/img/map_japan.png"></p>
+<p><img title="地名で検索" alt="地名で検索" src="/Users/maripo/git/id_guide/img/map_akihabara.png"></p>
 <p>お店のあるエリアが表示されたらいよいよ編集開始です。画面のいちばん上にある「編集」を選びます。初めてでもすぐに使える「iD (ブラウザー内エディター) で編集」を選びます。</p>
-<img alt="編集開始" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/select_editor.png">
-
+<p><img title="編集開始" alt="編集開始" src="/Users/maripo/git/id_guide/img/select_editor.png"></p>
 <p>ブラウザー内エディター「iD」が起動します。起動には少し時間がかかる場合があります。起動が完了すると、航空写真の上に道路や建物や施設の情報が表示されます。</p>
-<img alt="オンラインエディタiD" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/id.png">
-
-<p>地図の右に表示される「+」「-」ボタンを使い、店舗を追加したい位置に向かってズームしたら、編集準備完了です。</p>
-<img alt="オンラインエディタiD" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/zoom.png">
-
+<p><img title="オンラインエディタiD" alt="オンラインエディタiD" src="/Users/maripo/git/id_guide/img/id.png"></p>
+<p>TODO 店のアイコンが見えるまでズーム</p>
 <ul>
 <li><a href="#add"><strong>お店自体を登録する</strong>ところからスタートする場合</a></li>
 <li><a href="#edit"><strong>お店の情報を編集する</strong>場合</a></li>
 </ul>
 <h2 id="新しいお店を登録a-nameadda">新しいお店を登録<a name="add"></a></h2>
-<p>画面上のメニューから「ポイント」を選びます。</p>
-<img alt="ポイント」を選択" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/add_point.png">
-
-<p>カーソルが十字に変わるので、追加したい地点を地図上でクリックします。
-追加する位置はお店の中心部に相当する位置を目安にしてください。</p>
-<img alt="ピンを追加" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/add_pin.png">
-
-<p>白いピンが立ち、赤く点滅し、左に地物 (地図上のモノのことをこう呼びます) の種類を選択する画面が現れますので、追加したいお店の種類を選んでください。
-地物の種類はたくさんありますので、虫眼鏡アイコンのあるテキストボックスで絞り込むのがおすすめです。</p>
-<img alt="「レストラン」の検索" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/search_type.png">
-
-<p>どれに分類するか曖昧な場合は、あまり悩まずに最も近そうなものを選べばOKです。よく使われる分類は以下のようなものがあります。</p>
-<ul>
-<li>レストラン : 食事のできるお店。</li>
-<li>ファストフード : すばやく食事を済ませることができる比較的低価格なお店。ハンバーガーやピザなど、細かい分類もあります。</li>
-<li>喫茶店 : ノンアルコールの飲み物がメインのカフェなど。</li>
-<li>居酒屋 : お酒と食べ物を提供するお店。</li>
-<li>バー : お酒をメインとするお店。</li>
-</ul>
-<img alt="「レストラン」を選択" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/add_restaurant.png">
-
-<p>選択したいお店の種類がグレーで表示され、「ポイントが非表示となっています。ズームインして有効化してください。」と表示される場合、ズームが足りません。地図の右にある「+」「-」ボタンでズームインしてください。</p>
-<img alt="編集できない場合" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/restaurant_unavailable.png">
-
-<p>「名称」の欄に、お店の名前を記入します。</p>
-<img alt="お店の名前を入力" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/input_name.png">
-
+<p>「ポイント」を選びます。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/add_point.png"></p>
+<p>追加したい地点を地図上でクリックします。白いピンが立ち、赤く点滅します。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/add_pin.png"></p>
+<p>左に地物の種類を選択する画面が現れますので、「レストラン全般」を選びます。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/add_restaurant.png"></p>
+<p>「レストラン全般」がグレーで表示され、「ポイントが非表示となっています。ズームインして有効化してください。」と表示される場合、ズームが足りません。地図の右にある「+」「-」ボタンでズームインしてください。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/restaurant_unavailable.png"></p>
+<p>「名称」の欄に、お店の名前を記入します。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/input_name.png"></p>
 <h2 id="お店の情報を編集するa-nameedita">お店の情報を編集する<a name="edit"></a></h2>
 <p>お店をクリックします。</p>
-<p>OpenStreetMapでは、お店の色々な情報を登録することができます。
-たとえば営業時間や料理のジャンル、そしてテイクアウトやデリバリーの情報などなど。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/add_tag.png">
-
-<p>「可能」「不可能」「持ち帰りのみ」の選択肢が表示されますので、該当するものを選んでください。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/input_takeaway_value.png">
-
-<p>これで「このお店はお持ち帰りが可能」という情報が入力できました。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/input_takeaway_value_done.png">
-
-<p>配達の可否も同様に入力することができます。こちらはチェックボックスで選択する方式になっています。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/input_delivery_value.png">
-
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/input_delivery_value_done.png">
-
+<p>OpenStreetMapでは、お店の色々な情報を登録することができます。たとえば営業時間や料理のジャンル、そしてテイクアウトやデリバリーの情報などなど。</p>
+<p><img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/add_tag.png"></p>
+<p>「可能」「不可能」「持ち帰りのみ」の選択肢が表示されますので、該当するものを選んでください。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/input_takeaway_value.png"></p>
+<p>これで編集完了。
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/input_takeaway_value_done.png"></p>
 <h2 id="コミット">コミット</h2>
-<p>うまく編集できましたか? この時点ではまだ、変更した内容はOpenStreetMapに反映されていません。
-<strong>コミット</strong>することによって、全世界に向けて情報を発信することができます。</p>
-<p>画面右上の「コミット」をクリックします。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/commit.png">
-
-<p>コミットする際には、「何を変更したのか」を「コミットメッセージ」として添えます。</p>
-<img alt="TODO" style="max-width:320px;max-height:320px" src="/Users/maripo/git/id_guide/img/commit_message.png">
-
-<p>この内容でOK! と思ったら、「アップロード」をクリック。これで変更内容がOpenStreetMapのサーバに送信され、しばらくすると全世界に公開されます。そのうちみんなでテイクアウトMAPにも反映されます。おめでとうございます! OpenStreetMapデビューに成功です!</p>
+<p>うまく編集できましたか? この時点では登録されていません。</p>
+<p>コミット
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/commit.png">
+<img title="TODO" alt="TODO" src="/Users/maripo/git/id_guide/img/commit_message.png"></p>
+<p>コミットといいます。
+しばらくすると全世界に公開されます。そのうちみんなでテイクアウトMAPにも反映されます。おめでとうございます! OpenStreetMapデビューに成功です!</p>
 <h2 id="openstreetmapにもっと参加したいと思ったら">OpenStreetMapにもっと参加したいと思ったら</h2>
-<p>ここでは、お店をひとつ追加したり、お店のお持ち帰りや配達の情報を記入したりする方法を紹介しました。
-OpenStreetMapの情報を編集する人のことを<strong>マッパー</strong>といいます。お店をひとつ編集したらあなたはマッパーとして世界デビューを果たしたことになります。</p>
-<p>TODO</p>
+<p>TODO</p></body>
+      </html>
