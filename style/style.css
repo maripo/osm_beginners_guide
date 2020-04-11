@@ -7,13 +7,18 @@ h1 {
   font-size: 2rem;
 }
 .section {
-  
+  clear:both;
 }
 .section__h2 {
   
 }
 .section__p {
   
+}
+
+.img-small {
+  max-width: 240px;
+  max-height: 240px;
 }
 
 .toc {
@@ -24,13 +29,6 @@ h1 {
 }
 .toc__list__item {
   
-}
-
-img {
-  display:block;
-}
-.section__img {
-  display:block;
 }
 
 .gallery {

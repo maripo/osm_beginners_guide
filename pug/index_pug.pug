@@ -16,7 +16,9 @@ html
           | のデータに基づいています。
         p.section__p
           | OpenStreetMapのデータはだれでも編集可能です。地元のお店やお気に入りのお店の情報が不足していたり間違っていたりしたら、すぐに変更することができます。お店自体が登録されていなくても、新しく登録することができます。編集は一般的なWebブラウザで簡単にできますので、ぜひこの機会にOpenStreetMapを編集してみませんか?
-          | OpenStreetMapを編集するにはアカウントを持っている必要があります。アカウントは誰でも作成することができます。
+        p.section__p
+          | OpenStreetMapの編集に参加する前に、ひとつ重要な決まりをおぼえておいてください。
+          strong 他のサイトからのコピーはせず、自分が現地で得た情報だけを入力するようにしてください。
         div.toc
           ul.toc__list
             li.toc__list__item
@@ -49,32 +51,32 @@ html
           | アカウントの作成
           a(name='register')
         p.section__p
+          | OpenStreetMapを編集するにはユーザアカウントを持っている必要があります。アカウントは誰でもすぐに作成することができます。
           | OpenStreetMapのアカウントをお持ちでない方は、
           a(href='https://www.openstreetmap.org/user/') ユーザ登録ページ
           | で登録を行ってください。メールアドレスや表示名 (OpenStreetMap上で表示されるあなたの名前です) を入力すると、登録したメールアドレス宛にメールが届きますので、メールの内容に従って登録を完了させてください。
-        img(alt='ユーザ登録', style='max-width:320px;max-height:320px', src='img/register.png')
+        img.img-small(alt='ユーザ登録', src='img/register.png')
         p.section__p その他のSNSなど外部アカウントとの連携も可能ですが、ここでは詳しい説明は省略します。
         h2.section__h2(id='ログイン')
           | ログイン
           a(name='login')
       section.section
+        img.img-small(alt='ログイン', src='img/login.png')
         p.section__p
           | すでにOpenStreetMapのアカウントをお持ちの場合は、
           a(href='https://www.openstreetmap.org/login') ログインページ
           | からログインします。
-        img(alt='ログイン', style='max-width:320px;max-height:320px', src='img/login.png')
         h2.section__h2(id='お店の場所を探す') お店の場所を探す
-        p.section__p お店のある地域にズームインします。
-        p.section__p 地図を動かしながらズームインしていくこともできます。
-        img(alt='地図が表示されます', style='max-width:320px;max-height:320px', src='img/map_japan.png')
-        p.section__p 左上の検索ボックスに住所や駅名などを入れると検索できます。
+        p.section__p お店のある地域にズームインします。左上の検索ボックスに住所や駅名などを入れると検索できます。
         img(alt='地名で検索', style='max-width:320px;max-height:320px', src='img/map_search.png')
+        p.section__p 地図を動かしながら、右のズームインしていくという方法もあります。
+        img(alt='地図が表示されます', style='max-width:320px;max-height:320px', src='img/map_japan.png')
         p.section__p
           | お店のあるエリアが表示されたらいよいよ編集開始です。画面のいちばん上にある「編集」を選びます。初めてでもすぐに使える「iD (ブラウザー内エディター) で編集」を選びます。
-        img(alt='編集開始', style='max-width:320px;max-height:320px', src='img/select_editor.png')
+        img.img-small(alt='編集開始', src='img/select_editor.png')
         p.section__p ブラウザー内エディター「iD」が起動します。起動には少し時間がかかる場合があります。起動が完了すると、航空写真の上に道路や建物や施設の情報が表示されます。
         img(alt='オンラインエディタiD', style='max-width:320px;max-height:320px', src='img/id.png')
-        p.section__p 地図の右に表示される「+」「-」ボタンを使い、店舗を追加したい位置に向かってズームしたら、編集準備完了です。
+        p.section__p 地図の右に表示される「+」「-」ボタンを使い、店舗を追加したい位置に向かってさらにズームしたら、編集準備完了です。
         img(alt='オンラインエディタiD', style='max-width:320px;max-height:320px', src='img/zoom.png')
         ul
           li
@@ -97,7 +99,7 @@ html
         p.section__p
           | 白いピンが立ち、赤く点滅し、左に地物 (地図上のモノのことをこう呼びます) の種類を選択する画面が現れますので、追加したいお店の種類を選んでください。
           | 地物の種類はたくさんありますので、虫眼鏡アイコンのあるテキストボックスで絞り込むのがおすすめです。
-        img(alt='「レストラン」の検索', style='max-width:320px;max-height:320px', src='img/search_type.png')
+        img.img-small(alt='「レストラン」の検索', src='img/search_type.png')
         p.section__p どれに分類するか曖昧な場合は、あまり悩まずに最も近そうなものを選べばOKです。よく使われる分類は以下のようなものがあります。
         ul
           li レストラン : 食事のできるお店。
@@ -118,8 +120,8 @@ html
         p.section__p
           | OpenStreetMapでは、お店の色々な情報を登録することができます。
           | たとえば営業時間や料理のジャンル、そして持ち帰りや配達の、屋外席の情報などなど。
-          | ここでは、「持ち帰り」と「配達」について
-        table.gallery
+          | ここでは、「持ち帰り」と「配達」の入力方法を説明します。
+        table.gallery(style="width:96%")
           tr
             td.gallery__img-cell
               img.gallery__img-cell__img(src='img/add_tag.png')
@@ -132,9 +134,17 @@ html
             td.gallery__caption-cell 該当する選択肢を選んで
             td.gallery__caption-cell 入力完了!
         
-        p.section__p 配達の可否も同様に入力することができます。こちらはチェックボックスで選択する方式になっています。
-        img(alt='TODO', style='max-width:320px;max-height:320px', src='img/input_delivery_value.png')
-        img(alt='TODO', style='max-width:320px;max-height:320px', src='img/input_delivery_value_done.png')
+        p.section__p 配達の可否も同様に入力することができます。
+        table.gallery(style="width:64%")
+          tr
+            td.gallery__img-cell
+              img.gallery__img-cell__img(src='img/input_delivery_value.png')
+            td.gallery__img-cell
+              img.gallery__img-cell__img(src='img/input_delivery_value_done.png')
+          tr
+            td.gallery__caption-cell 「追加項目」から「配達」を選択し
+            td.gallery__caption-cell チェックを入れればOK!
+        
         h2.section__h2(id='保存') 保存
         p.section__p
           | うまく編集できましたか? この時点ではまだ、変更した内容はOpenStreetMapに反映されていません。
@@ -145,7 +155,8 @@ html
         p.section__p 保存する際には、「何を変更したのか」を「変更セットのコメント」として添えます。
         img(alt='TODO', style='max-width:320px;max-height:320px', src='img/commit_message.png')
         p.section__p
-          | この内容でOK! と思ったら、「アップロード」をクリック。これで変更内容がOpenStreetMapのサーバに送信され、しばらくすると全世界に公開されます。そのうちみんなでテイクアウトMAPにも反映されます。おめでとうございます! OpenStreetMapデビューに成功です!
+          | この内容でOK! と思ったら、「アップロード」をクリック。これで変更内容がOpenStreetMapのサーバに送信され、しばらくすると全世界に公開されます。そのうちみんなでテイクアウトMAPにも反映されます。
+          | おめでとうございます! OpenStreetMapのマッパーとして世界デビューすることができました!
       section.section
         h2.section__h2(id='openstreetmapにもっと参加したいと思ったら') OpenStreetMapにもっと参加したいと思ったら
         p.section__p
