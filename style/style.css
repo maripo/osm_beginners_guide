@@ -31,6 +31,7 @@ h1 {
   
 }
 
+/*
 .gallery {
   
 }
@@ -47,5 +48,34 @@ h1 {
   padding:1em;
   box-sizing: border-box;
   border:1px solid #ddd;
+  
+}
+*/
+.gallery {
+  list-style: none;
+}
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery__item {
+  float:left;
+  width:320px;
+  height:320px;
+  box-sizing: border-box;
+  margin:0.2rem;
+  padding:0.5rem;
+  border:1px solid #ddd;
+  
+}
+.gallery__item__img {
+  height:240px;
+}
+.gallery__item__img__content {
+  max-width: 240px;
+  max-height: 240px;
+}
+.gallery__item__caption {
   
 }

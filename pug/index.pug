@@ -121,29 +121,50 @@ html
           | OpenStreetMapでは、お店の色々な情報を登録することができます。
           | たとえば営業時間や料理のジャンル、そして持ち帰りや配達の、屋外席の情報などなど。
           | ここでは、「持ち帰り」と「配達」の入力方法を説明します。
-        table.gallery(style="width:96%")
-          tr
-            td.gallery__img-cell
-              img.gallery__img-cell__img(src='img/add_tag.png')
-            td.gallery__img-cell
-              img.gallery__img-cell__img(src='img/input_takeaway_value.png')
-            td.gallery__img-cell
-              img.gallery__img-cell__img(src='img/input_takeaway_value_done.png')
-          tr
-            td.gallery__caption-cell 下のほうの「追加項目」というメニューから「持ち帰り」を選択し
-            td.gallery__caption-cell 該当する選択肢を選んで
-            td.gallery__caption-cell 入力完了!
+        //-
+          table.gallery(style="width:96%")
+            tr
+              td.gallery__img-cell
+                img.gallery__img-cell__img(src='img/add_tag.png')
+              td.gallery__img-cell
+                img.gallery__img-cell__img(src='img/input_takeaway_value.png')
+              td.gallery__img-cell
+                img.gallery__img-cell__img(src='img/input_takeaway_value_done.png')
+            tr
+              td.gallery__caption-cell 下のほうの「追加項目」というメニューから「持ち帰り」を選択し
+              td.gallery__caption-cell 該当する選択肢を選んで
+              td.gallery__caption-cell 入力完了!
+        //-
+          ul.gallery
+            li.gallery__item
+              .gallery__item__img
+                img.gallery__item__img__content(src="")
+              .gallery__item__caption
+              
+        ul.gallery
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/add_tag.png")
+            .gallery__item__caption 下のほうの「追加項目」というメニューから「持ち帰り」を選択し
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/input_takeaway_value.png")
+            .gallery__item__caption 該当する選択肢を選んで
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/input_takeaway_value_done.png")
+            .gallery__item__caption 入力完了!
         
         p.section__p 配達の可否も同様に入力することができます。
-        table.gallery(style="width:64%")
-          tr
-            td.gallery__img-cell
-              img.gallery__img-cell__img(src='img/input_delivery_value.png')
-            td.gallery__img-cell
-              img.gallery__img-cell__img(src='img/input_delivery_value_done.png')
-          tr
-            td.gallery__caption-cell 「追加項目」から「配達」を選択し
-            td.gallery__caption-cell チェックを入れればOK!
+        ul.gallery
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/input_delivery_value.png")
+            .gallery__item__caption 「追加項目」から「配達」を選択し
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/input_delivery_value_done.png")
+            .gallery__item__caption チェックを入れればOK!
         
         h2.section__h2(id='保存') 保存
         p.section__p
