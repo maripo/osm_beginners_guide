@@ -1,0 +1,53 @@
+body {
+  max-width: 910px;
+  color: #444;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+.section {
+  
+}
+.section__h2 {
+  
+}
+.section__p {
+  
+}
+
+.toc {
+  border: 1px solid #ddd;
+}
+.toc__list {
+  
+}
+.toc__list__item {
+  
+}
+
+img {
+  display:block;
+}
+.section__img {
+  display:block;
+}
+
+.gallery {
+  
+}
+.gallery__img-cell {
+    width:25%;
+    padding:1em;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+}
+.gallery__img-cell__img {
+  max-width: 100%;
+}
+.gallery__caption-cell {
+  padding:1em;
+  box-sizing: border-box;
+  border:1px solid #ddd;
+  
+}
