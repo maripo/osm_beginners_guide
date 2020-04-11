@@ -31,28 +31,10 @@ h1 {
   
 }
 
-/*
-.gallery {
-  
-}
-.gallery__img-cell {
-    width:25%;
-    padding:1em;
-    box-sizing: border-box;
-    border:1px solid #ddd;
-}
-.gallery__img-cell__img {
-  max-width: 100%;
-}
-.gallery__caption-cell {
-  padding:1em;
-  box-sizing: border-box;
-  border:1px solid #ddd;
-  
-}
-*/
 .gallery {
   list-style: none;
+  padding:0;
+  margin:0;
 }
 .gallery:after {
   content: "";
