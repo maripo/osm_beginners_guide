@@ -14,18 +14,24 @@ html
           | は、みんなで編集できるみんなの地図
           a(href='https://www.openstreetmap.org/')
             strong OpenStreetMap
-          | のデータに基づいています。
+          | のデータを利用しています。
         p.section__p
-          | OpenStreetMapのデータはだれでも編集可能です。地元のお店やお気に入りのお店の情報が不足していたり間違っていたりしたら、すぐに変更することができます。お店自体が登録されていなくても、新しく登録することができます。編集は一般的なWebブラウザで簡単にできますので、ぜひこの機会にOpenStreetMapを編集してみませんか?
+          | OpenStreetMapにテイクアウト情報を登録することで、「みんなでテイクアウトMAP」に表示されるだけでなく、OpenStreetMapを利用している様々なサービスやアプリケーションでも登録した店舗情報が活用されてます。
+        p.section__p
+          | OpenStreetMapのデータはだれでも編集可能です。
+          br
+          | 地元のお店やお気に入りのお店の情報が不足していたり間違っていたりしたら、すぐに変更することができます。お店自体が登録されていなくても、新しく登録することができます。編集は一般的なWebブラウザで簡単にできますので、ぜひこの機会にOpenStreetMapを編集してみませんか?
         p.section__p
           | OpenStreetMapの編集に参加する前に、ひとつ重要な決まりをおぼえておいてください。
+          br
+          |
           strong 他のサイトからのコピーはせず、自分が現地で得た情報だけを入力するようにしてください。
         div.toc
           ul.toc__list
             li.toc__list__item
-              a.toc__list__item__link(href="#register") アカウントの作成
+              a.toc__list__item__link(href="#register") OpenStreetMapのアカウントを作る
             li.toc__list__item
-              a.toc__list__item__link(href="#login") ログイン
+              a.toc__list__item__link(href="#login") OpenStreetMapにログインする
             li.toc__list__item
               a.toc__list__item__link(href="#お店の場所を探す") お店の場所を探す
             li.toc__list__item
@@ -33,7 +39,7 @@ html
             li.toc__list__item
               a.toc__list__item__link(href="#お店の情報を編集する") お店の情報を編集する
             li.toc__list__item
-              a.toc__list__item__link(href="#保存") 保存
+              a.toc__list__item__link(href="#保存") お店の情報を保存する
             li.toc__list__item
               a.toc__list__item__link(href="#OpenStreetMapにもっと参加したいと思ったら") OpenStreetMapにもっと参加したいと思ったら
               
@@ -49,7 +55,7 @@ html
               strong 持っていない
               | 方はここから
         h2.section__h2(id='register')
-          | アカウントの作成
+          | OpenStreetMapのアカウントを作る
           a(name='register')
         p.section__p
           | OpenStreetMapを編集するにはユーザアカウントを持っている必要があります。アカウントは誰でもすぐに作成することができます。
@@ -59,7 +65,7 @@ html
         img.img-small(alt='ユーザ登録', src='img/register.png')
         p.section__p その他のSNSなど外部アカウントとの連携も可能ですが、ここでは詳しい説明は省略します。
         h2.section__h2(id='login')
-          | ログイン
+          | OpenStreetMapにログインする
       section.section
         img.img-small(alt='ログイン', src='img/login.png')
         p.section__p
@@ -116,7 +122,6 @@ html
         h2.section__h2(id='お店の情報を編集する')
           | お店の情報を編集する
           a(name='edit')
-        p.section__p お店をクリックします。
         p.section__p
           | OpenStreetMapでは、お店の色々な情報を登録することができます。
           | たとえば営業時間や料理のジャンル、そして持ち帰りや配達の、屋外席の情報などなど。
@@ -141,6 +146,8 @@ html
                 img.gallery__item__img__content(src="")
               .gallery__item__caption
               
+        h3 テイクアウト情報（持ち帰り）の登録
+        p.section__p お店をクリックします。
         ul.gallery
           li.gallery__item
             .gallery__item__img
@@ -155,7 +162,27 @@ html
               img.gallery__item__img__content(src="img/input_takeaway_value_done.png")
             .gallery__item__caption 入力完了!
         
-        p.section__p 配達の可否も同様に入力することができます。
+        p.section__p 追加項目に「持ち帰り」がない時は、手動で追加することができます。
+        ul.gallery
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/add_tag_notakeaway.png")
+            .gallery__item__caption 例えば、居酒屋に「持ち帰り」はありません。
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/add_tag_addtakeaway1.png")
+            .gallery__item__caption 「タグ」の欄にある「＋」ボタンをクリック
+          li.gallery__item
+            .gallery__item__img
+              img.gallery__item__img__content(src="img/add_tag_addtakeaway1.png")
+            .gallery__item__caption 左側に「takeaway」、右側に「yes」を入力すればOK!        
+        p.section__p
+          | 左側は「takeaway」です。takeoutでは無いのでご注意ください。
+          br
+          | 右側は「yes」ですが、持ち帰り専門店は「only」の方がより正確な表現になります。
+
+        h3 デリバリー情報（配達）の登録
+        p.section__p お店をクリックします。
         ul.gallery
           li.gallery__item
             .gallery__item__img
@@ -165,8 +192,8 @@ html
             .gallery__item__img
               img.gallery__item__img__content(src="img/input_delivery_value_done.png")
             .gallery__item__caption チェックを入れればOK!
-        
-        h2.section__h2(id='保存') 保存
+
+        h2.section__h2(id='保存') お店の情報を保存する
         p.section__p
           | うまく編集できましたか? この時点ではまだ、変更した内容はOpenStreetMapに反映されていません。
           strong 保存
@@ -176,7 +203,7 @@ html
         p.section__p 保存する際には、「何を変更したのか」を「変更セットのコメント」として添えます。
         img(alt='TODO', style='max-width:320px;max-height:320px', src='img/commit_message.png')
         p.section__p
-          | この内容でOK! と思ったら、「アップロード」をクリック。これで変更内容がOpenStreetMapのサーバに送信され、しばらくすると全世界に公開されます。そのうちみんなでテイクアウトMAPにも反映されます。
+          | この内容でOK! と思ったら、「アップロード」をクリック。これで変更内容がOpenStreetMapのサーバに送信され、しばらくすると全世界に公開されます。そのうち「みんなでテイクアウトMAP」にも反映されます（数十分から数時間程度）。
           | おめでとうございます! OpenStreetMapのマッパーとして世界デビューすることができました!
       section.section
         h2.section__h2(id='openstreetmapにもっと参加したいと思ったら') OpenStreetMapにもっと参加したいと思ったら
@@ -191,3 +218,8 @@ html
         ul
           li
             a(href='https://wiki.openstreetmap.org/wiki/JA:%E5%88%9D%E5%BF%83%E8%80%85%E3%82%AC%E3%82%A4%E3%83%89') 初心者ガイド
+          li
+            a(href='https://wiki.openstreetmap.org/wiki/JA:Main_Page') OpenStreetMapにようこそ（メインページ）
+          li
+            a(href='https://osm.jp') OpenStreetMap Japan（コミュニティページ）
+
